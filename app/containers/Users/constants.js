@@ -1,0 +1,11 @@
+/*
+ *
+ * Users constants
+ *
+ */
+
+export const DEFAULT_ACTION = "app/Users/DEFAULT_ACTION";
+export const UPDATE_USER_LIST = "UPDATE_USER_LIST";
+export const USERS_PAGE_SET_LOADING = "USERS_PAGE_SET_LOADING";
+export const USERS_PAGE_CHANGE_FILTER = "USERS_PAGE_CHANGE_FILTER";
+export const USERS_PAGE_CHANGE_SEARCH = "USERS_PAGE_CHANGE_SEARCH";

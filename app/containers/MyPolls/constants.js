@@ -1,0 +1,2 @@
+export const SET_POLLS = "SET_POLLS";
+export const MY_POLLS_SET_LOADING = "MY_POLLS_SET_LOADING";
