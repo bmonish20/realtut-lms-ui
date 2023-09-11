@@ -45,7 +45,7 @@ export default function HomePage({}) {
     <div className="homePage">
       <Helmet>
         <title>Home Page</title>
-        <meta name="description" content="RealTuT application homepage" />
+        <meta name="description" content="SAN application homepage" />
       </Helmet>
       <div className="text-center">
         <h2>

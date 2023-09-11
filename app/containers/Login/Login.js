@@ -170,7 +170,7 @@ function Login() {
             <Card className="bg-secondary">
               <CardHeader>
                 <div className="text-center">
-                  <h1 className="text-primary">RealTuT</h1>
+                  <h1 className="text-primary">SAN</h1>
                 </div>
               </CardHeader>
               <CardBody className="mx-md-4 mx-lg-4">

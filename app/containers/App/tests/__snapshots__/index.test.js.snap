@@ -3,13 +3,13 @@
 exports[`<App /> should render and match the snapshot 1`] = `
 <ForwardRef>
   <HelmetWrapper
-    defaultTitle="RealTuT"
+    defaultTitle="SAN"
     defer={true}
     encodeSpecialCharacters={true}
-    titleTemplate="%s - RealTuT"
+    titleTemplate="%s - SAN"
   >
     <meta
-      content="RealTuT application"
+      content="SAN application"
       name="description"
     />
   </HelmetWrapper>

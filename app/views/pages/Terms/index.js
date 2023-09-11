@@ -38,7 +38,7 @@ const Terms = () => {
                   <div className={clsx('bodyText', 'mt-3')}>
                     Please read these Terms and Conditions ("Terms", "Terms and
                     Conditions") carefully before using the
-                    https://www.realtut.com website (the "Service") operated
+                    https://www.sanrove.com website (the "Service") operated
                     by MT Digital Labs Pvt. Ltd ("us", "we", or "our").
                   </div>
                   <div className={clsx('bodyText', 'mt-3')}>

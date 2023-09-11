@@ -17,7 +17,7 @@ function AuthFooter() {
                   href="/"
                   target="_blank"
                 >
-                  RealTuT
+                  SAN
                 </a>
               </div>
             </Col>

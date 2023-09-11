@@ -45,8 +45,8 @@ export default function App() {
 
   return (
     <div className="app">
-      <Helmet titleTemplate="%s - RealTuT" defaultTitle="RealTuT">
-        <meta name="description" content="RealTuT application" />
+      <Helmet titleTemplate="%s - SAN" defaultTitle="SAN">
+        <meta name="description" content="SAN application" />
       </Helmet>
 
       <Switch>

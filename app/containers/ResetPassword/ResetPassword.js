@@ -102,7 +102,7 @@ function ResetPassword() {
             <Card className="bg-secondary">
               <CardHeader>
                 <div className="text-center">
-                  <h1 className="text-primary">RealTut</h1>
+                  <h1 className="text-primary">SAN</h1>
                 </div>
               </CardHeader>
               <CardBody className="mx-md-4 mx-lg-4">

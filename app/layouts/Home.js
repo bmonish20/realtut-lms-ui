@@ -94,7 +94,7 @@ function Home() {
         sidenavOpen={sidenavOpen}
         logo={{
           innerLink: "#",
-          imgSrc: require("assets/img/brand/realtut-logo-white.svg"),
+          imgSrc: require("assets/img/brand/sanrove-logo-white.svg"),
           imgAlt: "...",
         }}
       />
@@ -102,7 +102,7 @@ function Home() {
         <RtNavBar
           toggleSidenav={toggleSidenav}
           sidenavOpen={sidenavOpen}
-          brandText="RealTut"
+          brandText="SAN"
           profilePicture={getProfileUrl()}
         />
         <Switch>

@@ -212,7 +212,7 @@ function Register() {
         {getErrorComponent()}
         <Row className="justify-content-center mb-4">
           <div className="text-center text-xs text-muted">
-            By signing up, I agree to RealTuT's{" "}
+            By signing up, I agree to SAN's{" "}
             <Link to="/auth/terms" target="_blank">
               Terms of service
             </Link>{" "}
@@ -272,7 +272,7 @@ function Register() {
             <Card className="bg-secondary">
               <CardHeader>
                 <div className="text-center">
-                  <h1 className="text-primary">RealTuT</h1>
+                  <h1 className="text-primary">SAN</h1>
                 </div>
               </CardHeader>
               <CardBody className="mx-md-4 mx-lg-4">
