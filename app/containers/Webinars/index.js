@@ -128,7 +128,7 @@ export default function Webinars() {
         </div>
       </Row>
       <Row className="mt-3">
-        <CardGroup>{getComponent()}</CardGroup>
+        {getComponent()}
       </Row>
     </div>
   );

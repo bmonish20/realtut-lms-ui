@@ -255,6 +255,7 @@ export default function Webinar({ match, ...rest }) {
                     color="primary"
                     onClick={redirectToWebinar}
                     target="_blank"
+                    disabled
                   >
                     To Event
                   </Button>

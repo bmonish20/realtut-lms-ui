@@ -52,6 +52,7 @@ function PlayContent({
             color="primary"
             type="button"
             onClick={() => redirectToMeeting()}
+            disabled
           >
             Join Meeting
           </Button>

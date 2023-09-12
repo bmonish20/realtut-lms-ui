@@ -83,6 +83,7 @@ function MyChapter({
               type="button"
               size="sm"
               onClick={() => redirectToMeeting()}
+              disabled
             >
               Start Meeting
             </Button>
