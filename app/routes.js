@@ -136,7 +136,7 @@ const routes = {
         {
           permission: permissions.BOOK_A_COURSE,
           path: "/my-courses",
-          name: "My Courses",
+          name: "Booked Courses",
           miniName: "",
           component: MyCourses,
           layout: "",

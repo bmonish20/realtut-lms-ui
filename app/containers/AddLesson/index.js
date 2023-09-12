@@ -175,7 +175,7 @@ export default function AddLesson({
             <RtInput
               onChange={(e) => dispatch(operations.changeTitle(e))}
               type="text"
-              placeholder="Enter Course Title"
+              placeholder="Enter Lesson Title"
               error={validations}
               name="title"
               value={title}
