@@ -49,9 +49,9 @@ function Login() {
     facebookKey: selectors.facebookKey(state),
   }));
 
-  React.useEffect(() => {
-    dispatch(operations.setOAuthConfig());
-  }, []);
+  // React.useEffect(() => {
+  //   dispatch(operations.setOAuthConfig());
+  // }, []);
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -210,7 +210,7 @@ function Login() {
                     </Col>
                   </Row>
                   {getErrorComponent()}
-                  <Row className="justify-content-center">
+                  {/* <Row className="justify-content-center">
                     <Col xs="4">
                       <hr />
                     </Col>
@@ -220,10 +220,10 @@ function Login() {
                     <Col xs="4">
                       <hr />
                     </Col>
-                  </Row>
-                  <Row className="justify-content-center mb-1">
+                  </Row> */}
+                  {/* <Row className="justify-content-center mb-1">
                     {getOAuthComponents()}
-                  </Row>
+                  </Row> */}
                 </Form>
                 {/* <Row className="justify-content-center">
                   <div className="text-muted text-xs">
