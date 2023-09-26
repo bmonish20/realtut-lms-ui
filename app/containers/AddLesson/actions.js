@@ -13,6 +13,7 @@ import {
   CHANGE_LINK,
   CHANGE_DATE,
   CHANGE_TAG,
+  CHANGE_VIDEO_LINK,
   SET_SUBMITTING,
   VALIDATION_ERROR,
   SET_LESSON_DETAILS,
@@ -134,6 +135,11 @@ export const changeDate = (payload) => ({
 
 export const changeTag = (payload) => ({
   type: CHANGE_TAG,
+  payload,
+});
+
+export const changeVideoLink = (payload) => ({
+  type: CHANGE_VIDEO_LINK,
   payload,
 });
 

@@ -14,6 +14,7 @@ import {
   Row
 } from "reactstrap";
 import Skeleton from "react-loading-skeleton";
+import YouTube from 'react-youtube';
 import "./playContentStyle.scss";
 
 function PlayContent({
@@ -32,9 +33,9 @@ function PlayContent({
     <Card>
       <CardBody>
         <CardTitle>
-          <Skeleton className="w-50"/>
+          <Skeleton className="w-50" />
         </CardTitle>
-        <Skeleton count="10"/>
+        <Skeleton count="10" />
       </CardBody>
     </Card>
   </div>
@@ -44,22 +45,37 @@ function PlayContent({
         <CardTitle className="text-primary h3">
           {chapter.title}
         </CardTitle>
-        <Row className="justify-content-center mb-3 text-sm">
-          This class is scheduled on Zoom.
-        </Row>
-        <Row className="justify-content-center">
-          <Button
-            color="primary"
-            type="button"
-            onClick={() => redirectToMeeting()}
-            disabled
-          >
-            Join Meeting
-          </Button>
-        </Row>
+        {chapter.videoLink ? (<>
+          <Row className="justify-content-center mb-3 text-sm">
+            This lesson is a YouTube Video
+          </Row>
+          <Row className="justify-content-center">
+            <YouTube
+              videoId={chapter.videoLink.split("?v=")[1]}
+              className='youtube-embed' // You can add your CSS class for styling
+            />
+          </Row>
+        </>) : (
+          <>
+            <Row className="justify-content-center mb-3 text-sm">
+              This class is scheduled on Zoom.
+            </Row>
+            <Row className="justify-content-center">
+              <Button
+                color="primary"
+                type="button"
+                onClick={() => redirectToMeeting()}
+                disabled
+              >
+                Join Meeting
+              </Button>
+            </Row>
+          </>
+        )}
+
       </CardBody>
-    </Card>
-  </div>;
+    </Card >
+  </div >;
 }
 
 PlayContent.propTypes = {

@@ -12,6 +12,7 @@ import {
   CHANGE_LINK,
   CHANGE_DATE,
   CHANGE_TAG,
+  CHANGE_VIDEO_LINK,
   SET_SUBMITTING,
   VALIDATION_ERROR,
   SET_LESSON_DETAILS,
@@ -25,6 +26,7 @@ export const initialState = {
   link: "",
   dateTime: "",
   tags: [],
+  videoLink: "",
   validations: null,
   isSubmitting: false,
   isEdit: false,
@@ -66,6 +68,9 @@ const addLessonReducer = (state = initialState, action) =>
       case CHANGE_TAG:
         draft.tags = action.payload || [];
         break;
+      case CHANGE_VIDEO_LINK:
+        draft.videoLink = action.payload;
+        break;
       case SET_SUBMITTING:
         draft.isSubmitting = action.payload;
         break;
@@ -84,6 +89,7 @@ const addLessonReducer = (state = initialState, action) =>
         };
         draft.tags = getTags(action.payload.tags);
         draft.link = action.payload.link;
+        draft.videoLink = action.payload.videoLink;
         draft.isEdit = true;
         break;
       }

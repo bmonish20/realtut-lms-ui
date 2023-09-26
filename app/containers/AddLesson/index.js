@@ -38,6 +38,7 @@ export default function AddLesson({
     link,
     dateTime,
     tags,
+    videoLink,
     validations,
     isSubmitting,
     isEdit,
@@ -50,6 +51,7 @@ export default function AddLesson({
     link: selectors.link(state),
     dateTime: selectors.dateTime(state),
     tags: selectors.tags(state),
+    videoLink: selectors.videoLink(state),
     validations: selectors.validations(state),
     isSubmitting: selectors.isSubmitting(state),
     isEdit: selectors.isEdit(state),
@@ -71,6 +73,7 @@ export default function AddLesson({
             level: _get(level, "value", ""),
             dateTime,
             tags: [...tags.map((tag) => tag.value)],
+            videoLink
           },
           postAdd,
           onConfirm
@@ -86,6 +89,7 @@ export default function AddLesson({
             level: _get(level, "value", ""),
             dateTime,
             tags: [...tags.map((tag) => tag.value)],
+            videoLink
           },
           postAdd,
           onConfirm
@@ -320,6 +324,21 @@ export default function AddLesson({
               isMulti={true}
               name="tags"
               onChange={(e) => dispatch(operations.changeTag(e))}
+            />
+          </Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label sm={3} className="text-sm">
+            YouTube Video
+          </Label>
+          <Col>
+            <RtInput
+              onChange={(e) => dispatch(operations.changeVideoLink(e))}
+              type="text"
+              placeholder="Enter YouTube Url"
+              error={validations}
+              name="videoLink"
+              value={videoLink}
             />
           </Col>
         </FormGroup>

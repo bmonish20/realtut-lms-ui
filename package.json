@@ -155,6 +155,7 @@
     "react-to-print": "2.5.1",
     "react-transition-group": "^4.3.0",
     "react-use": "^13.27.0",
+    "react-youtube": "^10.1.0",
     "reactstrap": "8.4.1",
     "recompose": "^0.30.0",
     "redux": "4.0.1",
