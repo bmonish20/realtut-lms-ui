@@ -105,7 +105,7 @@ const updateEvents = (payload) => ({
   payload,
 });
 
-const updateEventsOnDate = (payload) => ({
+export const updateEventsOnDate = (payload) => ({
   type: DASHBOARD_UPDATE_SIDEBAR_EVENTS,
   payload,
 });

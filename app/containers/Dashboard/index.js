@@ -35,6 +35,7 @@ export default function Dashboard() {
   const [cookie] = useCookies(["user"]);
   const dispatch = useDispatch();
 
+  let currentSelectedDate = ""
   const user = selectors.userName(cookie);
   const loggedUserEmail = selectors.loggedUserEmail(cookie);
   const {
@@ -64,14 +65,19 @@ export default function Dashboard() {
   }, []);
 
   const onSelectDate = (info) => {
-    dispatch(
-      operations.fetchEventOnDate(
-        moment(info.dateStr).toISOString(),
-        moment(info.dateStr)
-          .add(1, "day")
-          .toISOString()
-      )
-    );
+    if (info.dateStr == currentSelectedDate) {
+      dispatch(operations.updateEventsOnDate([]))
+    } else {
+      dispatch(
+        operations.fetchEventOnDate(
+          moment(info.dateStr).toISOString(),
+          moment(info.dateStr)
+            .add(1, "day")
+            .toISOString()
+        )
+      );
+    }
+    currentSelectedDate = info.dateStr;
   };
 
   const getCard = () => {
